@@ -1,5 +1,5 @@
 package Email::Delete::Mbox;
-# $Id: Mbox.pm,v 1.2 2004/12/17 18:07:50 cwest Exp $
+# $Id: Mbox.pm,v 1.3 2004/12/17 18:45:50 cwest Exp $
 use strict;
 
 {
@@ -15,7 +15,7 @@ package Email::Delete::Mbox;
 use base qw[Email::Folder::Mbox];
 
 use vars qw[$VERSION];
-$VERSION = sprintf "%d.%02d", split m/\./, (qw$Revision: 1.2 $)[1];
+$VERSION = sprintf "%d.%02d", split m/\./, (qw$Revision: 1.3 $)[1];
 
 use Email::Folder;
 use IO::File;
@@ -51,7 +51,7 @@ sub delete_message {
     Email::LocalDelivery::OverwriteMbox->deliver($_->as_string, $fh)
         for @keep;
     Email::LocalDelivery::OverwriteMbox->_set_fh(undef);
-    truncate $fh, tell $fh unless tell $fh < 1;
+    truncate $fh, tell $fh;
     close $fh;
 
     return scalar @delete;

@@ -1,12 +1,12 @@
 package Email::Delete;
-# $Id: Delete.pm,v 1.1 2004/12/17 18:03:16 cwest Exp $
+# $Id: Delete.pm,v 1.2 2004/12/17 18:45:50 cwest Exp $
 use strict;
 
 use base qw[Exporter];
 use vars qw[@EXPORT_OK $VERSION];
 
 @EXPORT_OK = qw[delete_message];
-$VERSION = sprintf "%d.%02d", split m/\./, (qw$Revision: 1.1 $)[1];
+$VERSION = '1.02';
 
 use Email::FolderType qw[folder_type];
 
