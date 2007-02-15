@@ -1,6 +1,6 @@
 --- #YAML:1.0
 name:                Email-Delete
-version:             1.021
+version:             1.022
 abstract:            Delete Messages from Folders
 license:             perl
 generated_by:        ExtUtils::MakeMaker version 6.31
@@ -8,7 +8,7 @@ distribution_type:   module
 requires:     
     Email::Folder:                 0.84
     Email::FolderType:             0.7
-    Email::LocalDelivery:          0.09
+    Email::LocalDelivery:          0.213
     Email::Simple:                 1.92
     File::Find::Rule:              0.28
     Test::More:                    0.47
