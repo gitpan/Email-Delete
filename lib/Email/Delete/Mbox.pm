@@ -15,7 +15,7 @@ package Email::Delete::Mbox;
 use base qw[Email::Folder::Mbox];
 
 use vars qw[$VERSION];
-$VERSION = sprintf "%d.%02d", split m/\./, (qw$Revision: 1.3 $)[1];
+$VERSION = '2.001';
 
 use Email::Folder;
 use IO::File;
@@ -71,11 +71,11 @@ Email::Delete::Maildir - Delete Messages from a mbox Folder
   
   my $message_id = shift @ARGV;
   
-  delete_messages from     => 'some/mbox',
-                  matching => sub {
-                      my $message = shift;
-                      $message->header('Message-ID') =~ $message_id;
-                  };
+  delete_message from     => 'some/mbox',
+                 matching => sub {
+                   my $message = shift;
+                   $message->header('Message-ID') =~ $message_id;
+                 };
 
 =head1 DESCRIPTION
 

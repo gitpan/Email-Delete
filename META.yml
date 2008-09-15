@@ -1,19 +1,18 @@
 --- #YAML:1.0
 name:                Email-Delete
-version:             1.022
+version:             2.001
 abstract:            Delete Messages from Folders
 license:             perl
-generated_by:        ExtUtils::MakeMaker version 6.31
+author:              
+    - Casey West <casey@geeknest.com>
+generated_by:        ExtUtils::MakeMaker version 6.44
 distribution_type:   module
 requires:     
     Email::Folder:                 0.84
     Email::FolderType:             0.7
     Email::LocalDelivery:          0.213
     Email::Simple:                 1.92
-    File::Find::Rule:              0.28
     Test::More:                    0.47
 meta-spec:
-    url:     http://module-build.sourceforge.net/META-spec-v1.2.html
-    version: 1.2
-author:
-    - Casey West <casey@geeknest.com>
+    url:     http://module-build.sourceforge.net/META-spec-v1.3.html
+    version: 1.3
