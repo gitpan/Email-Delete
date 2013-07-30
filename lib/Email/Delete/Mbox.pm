@@ -15,7 +15,7 @@ package Email::Delete::Mbox;
 use base qw[Email::Folder::Mbox];
 
 use vars qw[$VERSION];
-$VERSION = '2.001';
+$VERSION = '2.002';
 
 use Email::Folder;
 use IO::File;

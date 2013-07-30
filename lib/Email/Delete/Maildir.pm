@@ -3,7 +3,7 @@ package Email::Delete::Maildir;
 use strict;
 
 use vars qw[$VERSION];
-$VERSION = '2.001';
+$VERSION = '2.002';
 
 use Email::Simple;
 
